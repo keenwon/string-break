@@ -1,6 +1,6 @@
 'use strict';
 
-/* eslint-disable no-extra-parens */
+/* eslint-disable no-extra-parens, max-params */
 
 const stringWidth = require('string-width');
 
@@ -57,7 +57,7 @@ function isFullWidthChar(char) {
 /**
  * 获取下一个分割点
  */
-function getNextBreakPoint({ str, width, from, lastIndex }) {
+function getNextBreakPoint(str, width, from, lastIndex) {
   let idealIndex = from;
   let length = str.length;
   let subWidth = 0;
@@ -69,7 +69,7 @@ function getNextBreakPoint({ str, width, from, lastIndex }) {
   } while ((subWidth <= width) && (idealIndex <= length))
 
   // 获取下一个实际分割点（只退不进）
-  let index = idealIndex;
+  let index = idealIndex - 1;
 
   if (index >= length) {
     return length;
@@ -110,7 +110,7 @@ function breaker(str, width) {
   let line, lines = [];
 
   while (index < length) {
-    breakPoint = getNextBreakPoint({ str, width, index, breakPoint });
+    breakPoint = getNextBreakPoint(str, width, index, breakPoint);
     line = str.slice(index, breakPoint).trim();
 
     lines.push(line);
