@@ -1,6 +1,7 @@
 'use strict';
 
-const debug = require('debug')('cli-string-break');
+/* eslint-disable no-extra-parens */
+
 const stringWidth = require('string-width');
 
 // "开"标点
@@ -36,6 +37,7 @@ let otherPunctuations = [
   '：', '─', '…', '·',
 
   // 英文
+  // eslint-disable-next-line quotes
   ':', '-', '–', '—', '"', "'"
 ];
 
@@ -55,7 +57,7 @@ function isFullWidthChar(char) {
 /**
  * 获取下一个分割点
  */
-function getNextBreakPoint(str, width, from, lastIndex) {
+function getNextBreakPoint({ str, width, from, lastIndex }) {
   let idealIndex = from;
   let length = str.length;
   let subWidth = 0;
@@ -64,7 +66,7 @@ function getNextBreakPoint(str, width, from, lastIndex) {
   do {
     idealIndex++;
     subWidth = stringWidth(str.slice(from, idealIndex));
-  } while ((subWidth <= width) && idealIndex <= length)
+  } while ((subWidth <= width) && (idealIndex <= length))
 
   // 获取下一个实际分割点（只退不进）
   let index = idealIndex;
@@ -108,7 +110,7 @@ function breaker(str, width) {
   let line, lines = [];
 
   while (index < length) {
-    breakPoint = getNextBreakPoint(str, width, index, breakPoint);
+    breakPoint = getNextBreakPoint({ str, width, index, breakPoint });
     line = str.slice(index, breakPoint).trim();
 
     lines.push(line);
