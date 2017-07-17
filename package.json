@@ -1,0 +1,43 @@
+{
+  "name": "string-break",
+  "version": "1.0.0",
+  "description": "Break string into lines according to visual width.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keenwon/string-break.git"
+  },
+  "keywords": [
+    "break",
+    "string",
+    "fixed-width",
+    "chinese",
+    "console",
+    "terminal",
+    "command-line",
+    "cli",
+    "escape",
+    "ansi",
+    "full-width",
+    "fullwidth",
+    "columns",
+    "column",
+    "visual",
+    "width",
+    "unicode",
+    "char",
+    "character"
+  ],
+  "author": {
+    "name": "keenwon",
+    "email": "semanwmj@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/keenwon/string-break/issues"
+  },
+  "homepage": "https://github.com/keenwon/string-break#readme"
+}
