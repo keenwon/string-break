@@ -1,6 +1,6 @@
 {
   "name": "string-break",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Break string into lines according to visual width.",
   "main": "index.js",
   "scripts": {
