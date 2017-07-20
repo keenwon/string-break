@@ -17,6 +17,13 @@ const stringBreak = require('string-break');
 const str = '远处海港传来阵阵船笛 我一直飘零到被你拣起 如今望著反映窗户玻璃 有个我陌生又熟悉';
 
 let lines = stringBreak(str, 30);
+/**
+ * lines: [ 
+ *   '远处海港传来阵阵船笛 我一直飘',
+ *   '零到被你拣起 如今望著反映窗户',
+ *   '玻璃 有个我陌生又熟悉'
+ * ]
+ */
 ```
 
 ## License
