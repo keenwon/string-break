@@ -49,6 +49,6 @@
     "mocha": "^5.2.0"
   },
   "dependencies": {
-    "string-width": "^2.1.0"
+    "string-width": "^3.0.0"
   }
 }
