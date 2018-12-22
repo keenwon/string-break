@@ -27,6 +27,7 @@ steps:
     versionSpec: $(node_version)
   displayName: 'Install Node.js'
 
+# upgrade npm on windows https://stackoverflow.com/a/27464115/4029077
 - script: npm install npm@latest
   displayName: 'npm upgrade'
 
