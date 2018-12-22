@@ -2,7 +2,7 @@
 
 [![NPM version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
-[![Build status][appveyor-image]][appveyor-url]
+[![Build status][azure-image]][azure-url]
 [![npm download][download-image]][download-url]
 
 ![](./example/screenshot.gif)
@@ -45,7 +45,7 @@ MIT.
 [npm-url]: https://www.npmjs.com/package/string-break
 [travis-image]: https://img.shields.io/travis/keenwon/string-break.svg?style=flat-square
 [travis-url]: https://travis-ci.org/keenwon/string-break
-[appveyor-image]: https://ci.appveyor.com/api/projects/status/p9cm8q4y9ail1kks/branch/master?svg=true
-[appveyor-url]: https://ci.appveyor.com/project/keenwon/string-break
+[azure-image]: https://dev.azure.com/keenwon/github/_apis/build/status/string-break?branchName=master
+[azure-url]: https://dev.azure.com/keenwon/github/_build/latest?definitionId=2?branchName=master
 [download-image]: https://img.shields.io/npm/dm/string-break.svg?style=flat-square
 [download-url]: https://npmjs.org/package/string-break
