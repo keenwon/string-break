@@ -6,9 +6,6 @@
 pool:
   vmImage: 'win1803'
 
-trigger:
-- *
-
 strategy:
   matrix:
     node_6_x:
