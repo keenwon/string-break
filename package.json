@@ -7,7 +7,7 @@
     "test": "npm run test:lint && npm run test:unit",
     "test:lint": "elint lint \"**/*.js\" --fix",
     "test:unit": "mocha",
-    "beforecommit": "npm run test"
+    "beforecommit": "elint lint commit && npm run test"
   },
   "repository": {
     "type": "git",
