@@ -47,16 +47,12 @@ function isPunctuation (char) {
     otherPunctuations.includes(char)
 }
 
-/**
- * 中文
- */
+// 中文
 function isFullWidthChar (char) {
   return /[\u4e00-\u9fa5]/.test(char)
 }
 
-/**
- * 获取下一个分割点
- */
+// 获取下一个分割点
 function getNextBreakPoint (str, width, from, lastIndex) {
   let idealIndex = from
   let length = str.length
