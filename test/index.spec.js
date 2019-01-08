@@ -33,4 +33,10 @@ describe('String Break Test', function () {
       })
     })
   }
+
+  it('宽度小于2', () => {
+    return function () {
+      stringBreak('keenwon', 1)
+    }.should.throw()
+  })
 })
