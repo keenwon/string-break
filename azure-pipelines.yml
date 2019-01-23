@@ -19,7 +19,7 @@ strategy:
     node_10_x:
       node_version: 10.x
     node_11_x:
-      node_version: 11.x
+      node_version: 11.6
 
 steps:
 - task: NodeTool@0
