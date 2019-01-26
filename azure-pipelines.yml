@@ -8,18 +8,18 @@ pool:
 
 strategy:
   matrix:
-    node_6_x:
+    node_6:
       node_version: 6.x
-    node_7_x:
+    node_7:
       node_version: 7.x
-    node_8_x:
+    node_8:
       node_version: 8.x
-    node_9_x:
+    node_9:
       node_version: 9.x
-    node_10_x:
+    node_10:
       node_version: 10.x
-    node_11_x:
-      node_version: 11.6
+    node_11:
+      node_version: 11.x
 
 steps:
 - task: NodeTool@0
