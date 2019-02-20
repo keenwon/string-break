@@ -49,7 +49,7 @@
     "coveralls": "^3.0.2",
     "elint": "^1.10.0-alpha.1",
     "elint-preset-kw": "^1.5.0",
-    "mocha": "^5.2.0",
+    "mocha": "^6.0.0",
     "nyc": "^13.1.0"
   },
   "dependencies": {
