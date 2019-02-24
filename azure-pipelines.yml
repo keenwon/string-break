@@ -31,8 +31,8 @@ steps:
 - script: npm install npm@latest
   displayName: 'npm upgrade'
 
-- script: npm install
-  displayName: 'npm install'
+- script: npm ci
+  displayName: 'npm ci'
 
 - script: npm run test:lint
   displayName: 'npm run test:lint'
