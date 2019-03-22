@@ -53,6 +53,6 @@
     "nyc": "^13.1.0"
   },
   "dependencies": {
-    "string-width": "^3.1.0"
+    "string-width": "^4.0.0"
   }
 }
