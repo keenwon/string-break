@@ -50,7 +50,7 @@
     "elint": "^1.11.0",
     "elint-preset-kw": "^1.8.1",
     "mocha": "^6.1.4",
-    "nyc": "^14.0.0"
+    "nyc": "^14.1.0"
   },
   "dependencies": {
     "string-width": "^4.1.0"
