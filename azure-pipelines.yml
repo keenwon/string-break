@@ -10,16 +10,12 @@ strategy:
   matrix:
     node_6:
       node_version: 6.x
-    node_7:
-      node_version: 7.x
     node_8:
       node_version: 8.x
-    node_9:
-      node_version: 9.x
     node_10:
       node_version: 10.x
     node_11:
-      node_version: 11.x
+      node_version: 12.x
 
 steps:
 - task: NodeTool@0
