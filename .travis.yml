@@ -9,5 +9,5 @@ node_js:
 os:
   - linux
   - osx
-before_script:
+before_install:
   - npm install -g npm
