@@ -76,3 +76,11 @@ steps:
 
 - script: npm run test:unit
   displayName: 'npm run test:unit'
+
+schedules:
+- cron: '0 0 * * *'
+  displayName: Daily build
+  branches:
+    include:
+    - master
+  always: true
