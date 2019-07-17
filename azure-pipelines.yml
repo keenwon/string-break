@@ -3,44 +3,58 @@
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 
+# upgrade npm on windows https://stackoverflow.com/a/27464115/4029077
+
 strategy:
   matrix:
     linux_node_6:
       image_name: 'ubuntu-16.04'
-      node_version: 6.x
+      node_version: '6.x'
+      npm_upgrade: 'npm install npm@latest -g'
     linux_node_8:
       image_name: 'ubuntu-16.04'
-      node_version: 8.x
+      node_version: '8.x'
+      npm_upgrade: 'npm install npm@latest -g'
     linux_node_10:
       image_name: 'ubuntu-16.04'
-      node_version: 10.x
+      node_version: '10.x'
+      npm_upgrade: 'npm install npm@latest -g'
     linux_node_12:
       image_name: 'ubuntu-16.04'
-      node_version: 12.x
+      node_version: '12.x'
+      npm_upgrade: 'npm install npm@latest -g'
     mac_node_6:
       image_name: 'macos-10.13'
-      node_version: 6.x
+      node_version: '6.x'
+      npm_upgrade: 'npm install npm@latest -g'
     mac_node_8:
       image_name: 'macos-10.13'
-      node_version: 8.x
+      node_version: '8.x'
+      npm_upgrade: 'npm install npm@latest -g'
     mac_node_10:
       image_name: 'macos-10.13'
-      node_version: 10.x
+      node_version: '10.x'
+      npm_upgrade: 'npm install npm@latest -g'
     mac_node_12:
       image_name: 'macos-10.13'
-      node_version: 12.x
+      node_version: '12.x'
+      npm_upgrade: 'npm install npm@latest -g'
     windows_node_6:
       image_name: 'vs2017-win2016'
-      node_version: 6.x
+      node_version: '6.x'
+      npm_upgrade: 'npm install npm@latest'
     windows_node_8:
       image_name: 'vs2017-win2016'
-      node_version: 8.x
+      node_version: '8.x'
+      npm_upgrade: 'npm install npm@latest'
     windows_node_10:
       image_name: 'vs2017-win2016'
-      node_version: 10.x
+      node_version: '10.x'
+      npm_upgrade: 'npm install npm@latest'
     windows_node_12:
       image_name: 'vs2017-win2016'
-      node_version: 12.x
+      node_version: '12.x'
+      npm_upgrade: 'npm install npm@latest'
 
 pool:
   vmImage: $(image_name)
@@ -51,8 +65,7 @@ steps:
     versionSpec: $(node_version)
   displayName: 'Install Node.js'
 
-# upgrade npm on windows https://stackoverflow.com/a/27464115/4029077
-- script: npm install npm@latest
+- script: $(npm_upgrade)
   displayName: 'npm upgrade'
 
 - script: npm ci
