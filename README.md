@@ -1,7 +1,7 @@
 # String-Break
 
 [![NPM version][npm-image]][npm-url]
-[![Build status][azure-image]][azure-url]
+<!-- [![Build status][azure-image]][azure-url] -->
 [![Coverage status][coveralls-image]][coveralls-url]
 [![npm download][download-image]][download-url]
 
@@ -43,8 +43,8 @@ MIT.
 
 [npm-image]: https://img.shields.io/npm/v/string-break.svg?maxAge=3600
 [npm-url]: https://www.npmjs.com/package/string-break
-[azure-image]: https://dev.azure.com/keenwon/github/_apis/build/status/string-break?branchName=master
-[azure-url]: https://dev.azure.com/keenwon/github/_build/latest?definitionId=2
+<!-- [azure-image]: https://dev.azure.com/keenwon/github/_apis/build/status/string-break?branchName=master -->
+<!-- [azure-url]: https://dev.azure.com/keenwon/github/_build/latest?definitionId=2 -->
 [coveralls-image]: https://coveralls.io/repos/github/keenwon/string-break/badge.svg?branch=master
 [coveralls-url]: https://coveralls.io/github/keenwon/string-break?branch=master
 [download-image]: https://img.shields.io/npm/dm/string-break.svg?maxAge=3600
