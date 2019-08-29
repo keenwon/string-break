@@ -1,7 +1,8 @@
 name: unittest
 
 on:
-  - push
+  - push: 
+    - branches: '*'
   - schedule:
     - cron: '* 0 * * *'
 
