@@ -22,7 +22,7 @@ jobs:
       - name: Upgrade Npm
         run: npm install npm@latest
         if: matrix.node_version == 8 && matrix.os == 'windows-latest'
-      - name: npm install and test
-        run: |
-          npm install
-          npm test
+      - name: npm install
+        run: npm install
+      - name: npm test
+        run: npm test
