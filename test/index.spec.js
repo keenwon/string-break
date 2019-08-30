@@ -2,11 +2,20 @@
 
 /* eslint-disable max-len, max-nested-callbacks */
 
+const os = require('os')
 const stringWidth = require('string-width')
 const stringBreak = require('../index.js')
 
 const chai = require('chai')
 chai.should()
+
+console.log('================= system info =================')
+console.log(`cpu:`)
+
+os.cpus().forEach(cpu => console.log(`  ${cpu.model}`))
+
+console.log(`memory: ${Math.ceil(os.totalmem() / 1024 / 1024 / 1024)}GB`)
+console.log('===============================================')
 
 describe('String Break Test', function () {
   const strObjs = [
