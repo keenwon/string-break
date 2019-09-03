@@ -27,6 +27,7 @@ jobs:
       - name: npm test
         run: npm test
       - name: Upload coverage to Codecov  
+        if: matrix.node_version == 12 && matrix.os == 'ubuntu-latest'
         uses: codecov/codecov-action@v1.0.2
         with:
           file: ./coverage/lcov.info
