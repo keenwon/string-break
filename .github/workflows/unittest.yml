@@ -30,4 +30,5 @@ jobs:
         if: matrix.node_version == 12 && matrix.os == 'ubuntu-latest'
         uses: codecov/codecov-action@v1.0.2
         with:
+          token: ${{secrets.CODECOV_TOKEN}}
           file: ./coverage/lcov.info
