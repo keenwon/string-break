@@ -1,6 +1,7 @@
 # String-Break
 
 [![NPM version][npm-image]][npm-url]
+[![Build status][build-status-image]][build-status-url]
 [![npm download][download-image]][download-url]
 [![Coverage status][codecov-image]][codecov-url]
 
@@ -40,9 +41,11 @@ let lines = stringBreak(str, 30);
 
 MIT.
 
-[npm-image]: https://img.shields.io/npm/v/string-break.svg?maxAge=3600&style=flat-square
+[npm-image]: https://img.shields.io/npm/v/string-break.svg?maxAge=3600
 [npm-url]: https://www.npmjs.com/package/string-break
-[download-image]: https://img.shields.io/npm/dm/string-break.svg?maxAge=3600&style=flat-square
+[build-status-image]: https://github.com/keenwon/string-break/workflows/unittest/badge.svg
+[build-status-url]: https://github.com/keenwon/string-break/actions
+[download-image]: https://img.shields.io/npm/dm/string-break.svg?maxAge=3600
 [download-url]: https://npmjs.org/package/string-break
-[codecov-image]: https://img.shields.io/codecov/c/github/keenwon/string-break.svg?maxAge=3600&style=flat-square
+[codecov-image]: https://img.shields.io/codecov/c/github/keenwon/string-break.svg?maxAge=3600
 [codecov-url]: https://codecov.io/gh/keenwon/string-break
