@@ -45,7 +45,7 @@
   },
   "homepage": "https://github.com/keenwon/string-break#readme",
   "devDependencies": {
-    "chai": "^4.1.0",
+    "chai": "^4.2.0",
     "cli-clear": "^1.0.4",
     "codecov": "^3.6.1",
     "elint": "^1.11.1",
