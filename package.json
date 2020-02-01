@@ -47,7 +47,7 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "cli-clear": "^1.0.4",
-    "codecov": "^3.6.1",
+    "codecov": "^3.6.3",
     "elint": "^1.11.1",
     "elint-preset-kw": "^1.8.1",
     "mocha": "^7.0.0",
