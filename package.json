@@ -50,7 +50,7 @@
     "codecov": "^3.6.5",
     "elint": "^1.11.1",
     "elint-preset-kw": "^1.8.1",
-    "mocha": "^7.1.2",
+    "mocha": "^7.2.0",
     "nyc": "^15.1.0"
   },
   "dependencies": {
