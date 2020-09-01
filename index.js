@@ -5,7 +5,7 @@
 const stringWidth = require('string-width')
 
 // "开"标点
-let openPunctuations = [
+const openPunctuations = [
   // 中文
   '“', '‘', '（', '《', '〈', '〔', '【',
 
@@ -18,7 +18,7 @@ function isOpenPunctuation (char) {
 }
 
 // "闭"标点
-let closePunctuations = [
+const closePunctuations = [
   // 中文
   '。', '？', '！', '，', '、', '；', '”',
   '’', '）', '》', '〉', '〕', '】',
@@ -32,7 +32,7 @@ function isClosePunctuation (char) {
 }
 
 // "其他"标点
-let otherPunctuations = [
+const otherPunctuations = [
   // 中文
   '：', '─', '…', '·',
 
@@ -55,7 +55,7 @@ function isFullWidthChar (char) {
 // 获取下一个分割点
 function getNextBreakPoint (str, width, from, lastIndex) {
   let idealIndex = from
-  let length = str.length
+  const length = str.length
   let subWidth = 0
 
   // 获取下一个理论上的分割点的索引
@@ -72,9 +72,9 @@ function getNextBreakPoint (str, width, from, lastIndex) {
   }
 
   while (index > lastIndex) {
-    let preValue = str.charAt(index - 1)
-    let value = str.charAt(index)
-    let canBreak = preValue === ' ' || value === ' ' ||
+    const preValue = str.charAt(index - 1)
+    const value = str.charAt(index)
+    const canBreak = preValue === ' ' || value === ' ' ||
       (isFullWidthChar(value) && isFullWidthChar(preValue)) ||
       (isClosePunctuation(preValue) && !isPunctuation(value)) ||
       (!isPunctuation(preValue) && isOpenPunctuation(value)) ||
@@ -100,10 +100,10 @@ function breaker (str, width) {
     throw new Error('Width must be greater than 2')
   }
 
-  let length = str.length
+  const length = str.length
   let index = 0
   let breakPoint = 0
-  let line; let lines = []
+  let line; const lines = []
 
   while (index < length) {
     breakPoint = getNextBreakPoint(str, width, index, breakPoint)

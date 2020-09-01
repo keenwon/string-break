@@ -10,7 +10,7 @@ const chai = require('chai')
 chai.should()
 
 console.log('================= system info =================')
-console.log(`cpu:`)
+console.log('cpu:')
 
 os.cpus().forEach(cpu => console.log(`  ${cpu.model}`))
 
