@@ -54,6 +54,6 @@
     "nyc": "^15.1.0"
   },
   "dependencies": {
-    "string-width": "^4.2.2"
+    "string-width": "^4.2.3"
   }
 }
