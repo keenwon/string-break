@@ -22,7 +22,7 @@ jobs:
           node-version: ${{ matrix.node_version }}
 
       - name: Upgrade Npm
-        run: npm install npm@latest
+        run: npm install npm@6
         if: matrix.node_version == 8 && matrix.os == 'windows-latest'
 
       - name: npm install
