@@ -7,6 +7,11 @@ coverage/
 
 # ELint (https://github.com/keenwon/elint)
 .eslintrc.js
+.eslintrc.cjs
 .stylelintrc.js
+.stylelintrc.cjs
 .commitlintrc.js
+.commitlintrc.cjs
 .huskyrc.js
+.husky
+.prettierrc.cjs
